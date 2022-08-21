@@ -11,7 +11,7 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
         })
     }
 
-    //Usando o Bearer auth ele vem Bearer fjsdg3465kljhgddsfkjgl
+    //Remove um sufixo que vem no token
     const [, token] = authToken.split(" ");
 
     try {
