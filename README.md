@@ -7,9 +7,6 @@ API feita usando nodejs com typescript para a aplicação CapiGalery.
 ## Authors
 
 - [Bruno Barbosa](https://github.com/Bruno-bhab)
-- [Randerson Neves](https://github.com/Bruno-bhab)
-- [Mariiana Carreteiro](https://github.com/Bruno-bhab)
-
 
 
 ## Get Started
