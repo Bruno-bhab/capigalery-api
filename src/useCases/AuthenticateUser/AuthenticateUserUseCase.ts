@@ -1,6 +1,5 @@
 import { client } from "../../prisma/client";
 import { compare } from 'bcryptjs';
-import { sign } from 'jsonwebtoken'
 import { GenerateRefreshTokenProvider } from "../../provider/GenerateRefreshTokenProvider";
 import { GenerateTokenProvider } from "../../provider/GenerateTokenProvider";
 

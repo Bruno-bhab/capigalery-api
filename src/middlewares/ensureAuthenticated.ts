@@ -15,9 +15,12 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
     const [, token] = authToken.split(" ");
 
     try {
-        verify(token, "capigalery");
+        verify(token, "capigalery", (err, decoded) => {
+            if(err) throw Error;
+            request.body.userId = decoded.sub
+        });
         return next();
-    } catch (error) {
+    } catch (err) {
         return response.status(401).json({
             message: "Token invalid!"
         })
